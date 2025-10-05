@@ -25,14 +25,22 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center;
+  align-items: flex-start;
   min-width: 320px;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 4.2em;
   line-height: 1.1;
+  font-family: 'Sacramento', cursive;
+  border-bottom: 1px solid black;
+}
+
+.Btn {
+  background-color: #00a9eb;
+  color: white;
 }
 
 button {
@@ -42,12 +50,15 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #00a9eb;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: white;
+  background-color: white;
+  color: #006cce;
+  border: 1px solid #006cce;
 }
 button:focus,
 button:focus-visible {
@@ -55,16 +66,162 @@ button:focus-visible {
 }
 
 .home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 2rem;
   text-align: center;
 }
 
 .home-buttons {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin-top: 2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.countries-grid article:hover {
+  transform: translateY(-4px);
+  transition: transform 150ms;
+}
+
+
+.countries-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 900px;
+}
+
+.countries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.region-select {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  min-width: 220px;
+  text-align: center;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.region-select:hover {
+  border-color: #646cff;
+  box-shadow: 0 0 6px rgba(100, 108, 255, 0.3);
+}
+
+.region-select:focus {
+  outline: none;
+  border-color: #535bf2;
+  box-shadow: 0 0 6px rgba(83, 91, 242, 0.5);
+}
+
+.country-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 2rem;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 2rem;
+}
+
+
+.collection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: auto;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.collection-card {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 0.4rem;
+  background-color: rgba(255,255,255,0.03);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 180px;
+}
+
+.collection-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+.collection-card p {
+  margin-top: 0.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quiz-container input,
+.quiz-container select {
+  margin: 0.5rem 0;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-image {
+  max-width: 400px;
+  width: 100%;      
+  height: auto;     
+  margin-bottom: 1rem;
+  border-radius: 8px; 
+}
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
