@@ -50,7 +50,7 @@ const Collection = () => {
                   );
                 }}
               >
-                Ta bort
+                Remove
               </button>
             </article>
           ))}

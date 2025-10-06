@@ -30,9 +30,7 @@ const Leaderboard = () => {
   return (
     <div className="container">
       <h1>Leaderboard</h1>
-      {Object.keys(leaderboardData).length === 0 && (
-        <p>Inga resultat hittades.</p>
-      )}
+      {Object.keys(leaderboardData).length === 0 && <p>No results found.</p>}
 
       {Object.entries(leaderboardData).map(([region, players]) => (
         <div
@@ -48,8 +46,8 @@ const Leaderboard = () => {
           <table>
             <thead>
               <tr>
-                <th>Användarnamn</th>
-                <th>Poäng</th>
+                <th>Username</th>
+                <th>Points</th>
               </tr>
             </thead>
             <tbody>
