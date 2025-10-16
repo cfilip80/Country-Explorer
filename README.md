@@ -6,8 +6,7 @@ Detta är ett skolprojekt byggt med [Vite](https://vitejs.dev/) och React.
 
 Beskriv kort vad projektet går ut på.
 
-> En app som hämtar data från ett API och visar länders flaggor, befolkkning m.m.
-> En Quiz del + leaderboard.
+> En app som hämtar data från ett API och visar länders flaggor, befolkning m.m. beroende på vilken region som väljs. Och ett Quiz med leaderboard.
 
 ## 🚀 Kom igång
 
